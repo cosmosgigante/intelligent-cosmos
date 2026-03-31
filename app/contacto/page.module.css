@@ -1,0 +1,117 @@
+.pageHeader {
+  background: var(--color-bg-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact { background: var(--color-bg); }
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.formWrapper {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10);
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.infoCard, .processCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+.infoCard h3, .processCard h3 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-display);
+}
+
+.infoList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+.infoList li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+.infoIcon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent-bg);
+  border-radius: var(--radius-md);
+  color: var(--color-accent-2);
+  flex-shrink: 0;
+}
+
+.infoLabel {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  margin-bottom: 2px;
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+.infoValue {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}
+a.infoValue:hover { color: var(--color-accent-2); }
+
+/* Process */
+.steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.step {
+  display: flex;
+  gap: var(--space-3);
+}
+.stepN {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-accent-2);
+  font-weight: 600;
+  padding-top: 1px;
+  flex-shrink: 0;
+}
+.step div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.step strong {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+.step span {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .formWrapper { padding: var(--space-6); }
+}

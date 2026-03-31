@@ -1,0 +1,104 @@
+.pageHeader {
+  background: var(--color-bg-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.services { background: var(--color-bg); }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.serviceCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+.serviceCard.reversed .serviceLeft  { order: 2; }
+.serviceCard.reversed .serviceRight { order: 1; }
+
+.serviceLeft {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.serviceTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: var(--color-accent-bg);
+  border: 1px solid rgba(108,99,255,0.2);
+  border-radius: var(--radius-xl);
+  color: var(--color-accent-2);
+}
+
+.serviceName {
+  font-size: clamp(var(--text-2xl), 3vw, var(--text-3xl));
+  color: var(--color-text);
+}
+.serviceTagline {
+  font-size: var(--text-lg);
+  color: var(--color-text);
+  font-weight: 500;
+  font-family: var(--font-display);
+}
+.serviceDesc { font-size: var(--text-base); }
+
+/* Right blocks */
+.serviceRight {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.block {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+.block h4 {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-display);
+}
+.block ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.block li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+.check { color: var(--color-green); flex-shrink: 0; margin-top: 1px; }
+
+@media (max-width: 900px) {
+  .serviceCard {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  .serviceCard.reversed .serviceLeft  { order: 1; }
+  .serviceCard.reversed .serviceRight { order: 2; }
+}

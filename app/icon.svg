@@ -1,0 +1,11 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ultra-bold technical brackets using solid blocks for pixel-perfect clarity -->
+  <!-- Left bracket < -->
+  <path d="M30 20L5 50L30 80" stroke="white" stroke-width="20" stroke-linecap="butt" stroke-linejoin="miter" />
+  
+  <!-- Right bracket > -->
+  <path d="M70 20L95 50L70 80" stroke="#4FD1C5" stroke-width="20" stroke-linecap="butt" stroke-linejoin="miter" />
+  
+  <!-- Slash / -->
+  <path d="M40 90L60 10" stroke="white" stroke-width="15" stroke-linecap="round" opacity="0.8" />
+</svg>

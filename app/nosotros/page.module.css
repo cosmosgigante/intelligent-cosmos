@@ -1,0 +1,100 @@
+.pageHeader {
+  background: var(--color-bg-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Story */
+.story { background: var(--color-bg); }
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+.storyText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+.storyText h2 { color: var(--color-text); margin-bottom: var(--space-2); }
+.storyText p  { font-size: var(--text-base); line-height: 1.8; }
+
+.statsCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.statN {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.04em;
+}
+.statL {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+/* Values */
+.values { background: var(--color-bg-2); }
+.valuesGrid { margin-top: var(--space-12); }
+
+.valueCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.valueIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent-bg);
+  border: 1px solid rgba(108,99,255,0.2);
+  border-radius: var(--radius-lg);
+  color: var(--color-accent-2);
+}
+.valueCard h3 { font-size: var(--text-lg); color: var(--color-text); }
+.valueCard p  { font-size: var(--text-sm); }
+
+/* Tech */
+.techSection { background: var(--color-bg); }
+
+.techGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-12);
+  justify-content: center;
+}
+
+.techItem {
+  padding: 0.5rem 1.25rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+}
+.techItem:hover {
+  border-color: var(--color-accent);
+  color: var(--color-text);
+  background: var(--color-accent-bg);
+}
+
+@media (max-width: 900px) {
+  .storyGrid { grid-template-columns: 1fr; }
+}
