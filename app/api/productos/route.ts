@@ -1,16 +1,42 @@
 import { NextResponse } from 'next/server';
 import products from '@/data/products';
 
-export const runtime = 'edge';
+// ❌ ELIMINADO edge runtime (rompía Cloudflare)
+// export const runtime = 'edge';
 
 export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
-  const category = searchParams.get('category');
-  const status = searchParams.get('status');
+  try {
+    const { searchParams } = new URL(request.url);
 
-  let filtered = products;
-  if (category) filtered = filtered.filter((p) => p.category.toLowerCase() === category.toLowerCase());
-  if (status)   filtered = filtered.filter((p) => p.status === status);
+    const category = searchParams.get('category')?.trim();
+    const status = searchParams.get('status')?.trim();
 
-  return NextResponse.json({ products: filtered, total: filtered.length });
+    let filtered = products;
+
+    if (category) {
+      filtered = filtered.filter(
+        (p) => p.category?.toLowerCase() === category.toLowerCase()
+      );
+    }
+
+    if (status) {
+      filtered = filtered.filter(
+        (p) => p.status === status
+      );
+    }
+
+    return NextResponse.json({
+      success: true,
+      products: filtered,
+      total: filtered.length,
+    });
+
+  } catch (error) {
+    console.error('[Products API error]', error);
+
+    return NextResponse.json(
+      { success: false, message: 'Error al obtener productos.' },
+      { status: 500 }
+    );
+  }
 }
