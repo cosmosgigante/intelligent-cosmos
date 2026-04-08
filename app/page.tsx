@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'CONVAL — Soluciones digitales de alto impacto',
+  title: 'Intelligent Cosmos — Soluciones digitales de alto impacto',
   description: 'Empresa de desarrollo de software especializada en servicios de programación, desarrollo web y productos digitales propios.',
 };
 

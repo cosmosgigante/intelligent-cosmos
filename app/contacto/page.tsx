@@ -6,7 +6,7 @@ import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'Contacto',
-  description: 'Contactá a CONVAL para iniciar tu proyecto de desarrollo web, software o producto SaaS.',
+  description: 'Contactá a Intelligent Cosmos para iniciar tu proyecto de desarrollo web, software o producto SaaS.',
 };
 
 export default function ContactoPage() {
@@ -39,7 +39,7 @@ export default function ContactoPage() {
                     <div className={styles.infoIcon}><Mail size={18} /></div>
                     <div>
                       <span className={styles.infoLabel}>Email</span>
-                      <a href="mailto:hello@conval.dev" className={styles.infoValue}>hello@conval.dev</a>
+                      <a href="mailto:hello@icosmos.dev" className={styles.infoValue}>hello@icosmos.dev</a>
                     </div>
                   </li>
                   <li>

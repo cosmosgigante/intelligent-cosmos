@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
-import ConvalLogo from '@/components/ui/ConvalLogo';
+import ICosmosLogo from '@/components/ui/ICosmosLogo';
 import styles from './Navbar.module.css';
 
 const navLinks = [
@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className={styles.inner}>
         {/* Logo */}
         <Link href="/" className={styles.brandLogo}>
-          <ConvalLogo size={24} showText />
+          <ICosmosLogo size={24} showText />
         </Link>
 
         {/* Desktop nav */}

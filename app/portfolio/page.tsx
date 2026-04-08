@@ -7,7 +7,7 @@ import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'Portfolio',
-  description: 'Proyectos reales desarrollados por CONVAL: sistemas, aplicaciones web y plataformas SaaS.',
+  description: 'Proyectos reales desarrollados por Intelligent Cosmos: sistemas, aplicaciones web y plataformas SaaS.',
 };
 
 const categoryLabel: Record<string, string> = {

@@ -2,13 +2,13 @@
 
 import React from 'react';
 
-interface ConvalLogoProps {
+interface ICosmosLogoProps {
   size?: number;
   className?: string;
   showText?: boolean;
 }
 
-export default function ConvalLogo({ size = 32, className = '', showText = false }: ConvalLogoProps) {
+export default function ICosmosLogo({ size = 32, className = '', showText = false }: ICosmosLogoProps) {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <svg
@@ -26,7 +26,7 @@ export default function ConvalLogo({ size = 32, className = '', showText = false
       </svg>
       {showText && (
         <span className="font-display font-extrabold tracking-tighter text-2xl uppercase text-white">
-          CONVAL
+          Intelligent Cosmos Services
         </span>
       )}
     </div>

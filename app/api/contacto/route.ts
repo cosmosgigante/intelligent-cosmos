@@ -41,10 +41,10 @@ export async function POST(request: Request) {
       const safeMessage = message.replace(/\n/g, '<br>');
 
       const { error } = await resend.emails.send({
-        from: 'CONVAL Contact <onboarding@resend.dev>',
+        from: 'Intelligent Cosmos Contact <onboarding@resend.dev>',
         to: [toEmail],
         replyTo: email,
-        subject: `[CONVAL] Nuevo contacto de ${name}`,
+        subject: `[ICosmos] Nuevo contacto de ${name}`,
         html: `
           <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
             <h2 style="color: #6c63ff;">Nuevo mensaje de contacto</h2>
@@ -58,7 +58,7 @@ export async function POST(request: Request) {
             <h4 style="color:#333;">Mensaje:</h4>
             <p style="color:#444; line-height:1.6;">${safeMessage}</p>
             <hr style="margin: 24px 0; border-color: #eee;" />
-            <p style="font-size:12px; color:#999;">Enviado desde el formulario de contacto de CONVAL</p>
+            <p style="font-size:12px; color:#999;">Enviado desde el formulario de contacto de Intelligent Cosmos</p>
           </div>
         `,
       });

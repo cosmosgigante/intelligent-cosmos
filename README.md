@@ -1,4 +1,4 @@
-# CONVAL — Corporate Web Platform
+# Intelligent Cosmos — Corporate Web Platform
 
 Plataforma web corporativa modular y lista para producción, construida con **Next.js 14 (App Router)** + TypeScript + CSS Modules.
 
@@ -20,7 +20,7 @@ Plataforma web corporativa modular y lista para producción, construida con **Ne
 ## Estructura del proyecto
 
 ```
-conval-web/
+icosmos-web/
 ├── app/                    # Páginas y rutas (App Router)
 │   ├── api/                # API endpoints
 │   │   ├── contacto/       # POST — formulario de contacto (Resend)
@@ -101,7 +101,7 @@ O conectar el repositorio en [vercel.com](https://vercel.com) y agregar las vari
 
 | Variable | Descripción |
 |---|---|
-| `NEXT_PUBLIC_SITE_URL` | URL pública del sitio (ej: `https://conval.dev`) |
+| `NEXT_PUBLIC_SITE_URL` | URL pública del sitio (ej: `https://icosmos.dev`) |
 | `RESEND_API_KEY` | API key de Resend para envío de emails |
 | `CONTACT_TO_EMAIL` | Email de destino para el formulario de contacto |
 
@@ -200,4 +200,4 @@ npm run lint     # Linter (ESLint)
 
 ## Licencia
 
-Código propietario — CONVAL. Todos los derechos reservados.
+Código propietario — Intelligent Cosmos. Todos los derechos reservados.

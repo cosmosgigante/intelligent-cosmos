@@ -5,7 +5,7 @@ import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'Nosotros',
-  description: 'Quiénes somos en CONVAL: nuestro equipo, valores y forma de trabajar.',
+  description: 'Quiénes somos en Intelligent Cosmos: nuestro equipo, valores y forma de trabajar.',
 };
 
 const values = [
@@ -58,7 +58,7 @@ export default function NosotrosPage() {
             <div className={styles.storyText}>
               <h2>Quiénes somos</h2>
               <p>
-                CONVAL nació de la necesidad de tener una alternativa real a las agencias tradicionales: un equipo que
+                Intelligent Cosmos nació de la necesidad de tener una alternativa real a las agencias tradicionales: un equipo que
                 entendiera tanto de negocios como de tecnología, y que pudiera entregar software de producción con la
                 velocidad de una startup.
               </p>
