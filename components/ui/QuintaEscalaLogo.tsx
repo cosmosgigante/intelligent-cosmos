@@ -2,13 +2,13 @@
 
 import React from 'react';
 
-interface ICosmosLogoProps {
+interface QuintaEscalaLogoProps {
   size?: number;
   className?: string;
   showText?: boolean;
 }
 
-export default function ICosmosLogo({ size = 32, className = '', showText = false }: ICosmosLogoProps) {
+export default function QuintaEscalaLogo({ size = 32, className = '', showText = false }: QuintaEscalaLogoProps) {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <svg
@@ -26,7 +26,7 @@ export default function ICosmosLogo({ size = 32, className = '', showText = fals
       </svg>
       {showText && (
         <span className="font-display font-extrabold tracking-tighter text-2xl uppercase text-white">
-          Intelligent Cosmos Services
+          Quinta Escala
         </span>
       )}
     </div>

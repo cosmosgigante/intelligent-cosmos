@@ -1,4 +1,4 @@
-# Intelligent Cosmos — Corporate Web Platform
+# Quinta Escala — Corporate Web Platform
 
 Plataforma web corporativa modular y lista para producción, construida con **Next.js 14 (App Router)** + TypeScript + CSS Modules.
 
@@ -20,7 +20,7 @@ Plataforma web corporativa modular y lista para producción, construida con **Ne
 ## Estructura del proyecto
 
 ```
-icosmos-web/
+quinta-escala-web/
 ├── app/                    # Páginas y rutas (App Router)
 │   ├── api/                # API endpoints
 │   │   ├── contacto/       # POST — formulario de contacto (Resend)
@@ -74,7 +74,7 @@ Editar `.env.local`:
 ```env
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 RESEND_API_KEY=re_xxxxxxxx          # de https://resend.com (gratis)
-CONTACT_TO_EMAIL=tu@email.com
+CONTACT_TO_EMAIL=quintaescala5@gmail.com
 ```
 
 > **Sin Resend:** el formulario de contacto funciona igual en modo desarrollo — los mensajes se loguean en la consola del servidor.
@@ -101,7 +101,7 @@ O conectar el repositorio en [vercel.com](https://vercel.com) y agregar las vari
 
 | Variable | Descripción |
 |---|---|
-| `NEXT_PUBLIC_SITE_URL` | URL pública del sitio (ej: `https://icosmos.dev`) |
+| `NEXT_PUBLIC_SITE_URL` | URL pública del sitio (ej: `https://quintaescala.com`) |
 | `RESEND_API_KEY` | API key de Resend para envío de emails |
 | `CONTACT_TO_EMAIL` | Email de destino para el formulario de contacto |
 
@@ -200,4 +200,4 @@ npm run lint     # Linter (ESLint)
 
 ## Licencia
 
-Código propietario — Intelligent Cosmos. Todos los derechos reservados.
+Código propietario — Quinta Escala. Todos los derechos reservados.

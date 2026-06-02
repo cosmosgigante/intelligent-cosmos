@@ -8,7 +8,7 @@ import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'Productos',
-  description: 'Nuestros productos digitales propios: SaaS, herramientas y sistemas construidos por Intelligent Cosmos.',
+  description: 'Nuestros productos digitales propios: SaaS, herramientas y sistemas construidos por Quinta Escala.',
 };
 
 export default function ProductosPage() {

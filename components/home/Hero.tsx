@@ -43,7 +43,7 @@ export default function Hero() {
           <div className={styles.glassCard}>
             <div className={styles.cardHeader}>
               <div className={styles.dots}><span /><span /><span /></div>
-              <div className={styles.tab}>icosmos.app/v1</div>
+              <div className={styles.tab}>quintaescala.app/v1</div>
             </div>
             <div className={styles.cardBody}>
               <div className={`${styles.codeLine} ${styles.type1}`} style={{ width: '80%' }} />
