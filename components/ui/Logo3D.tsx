@@ -139,31 +139,14 @@ export default function Logo3D() {
       light3.position.set(0, 0, 5);
       scene.add(light3);
 
-      // Mouse tracking
-      let targetX = 0;
-      let targetY = 0;
-      let currentX = 0;
-      let currentY = 0;
-
-      const onMouseMove = (e: MouseEvent) => {
-        const rect = mount.getBoundingClientRect();
-        targetX = ((e.clientX - rect.left) / W - 0.5) * Math.PI * 0.6;
-        targetY = -((e.clientY - rect.top) / H - 0.5) * Math.PI * 0.4;
-      };
-      window.addEventListener('mousemove', onMouseMove);
-
       let t = 0;
 
       const animate = () => {
         animationId = requestAnimationFrame(animate);
         t += 0.008;
 
-        // Smooth spring towards mouse
-        currentX += (targetX - currentX) * 0.04;
-        currentY += (targetY - currentY) * 0.04;
-
-        group.rotation.y = currentX + Math.sin(t * 0.6) * 0.18;
-        group.rotation.x = currentY + Math.cos(t * 0.4) * 0.06;
+        group.rotation.y = t * 0.5;
+        group.rotation.x = Math.cos(t * 0.4) * 0.06;
 
         // Orbit ring tilts with rotation
         ring.rotation.y = t * 0.3;
@@ -187,7 +170,6 @@ export default function Logo3D() {
       animate();
 
       cleanup = () => {
-        window.removeEventListener('mousemove', onMouseMove);
         cancelAnimationFrame(animationId);
         renderer.dispose();
         if (mount.contains(renderer.domElement)) {
