@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
-import QuintaEscalaLogo from '@/components/ui/QuintaEscalaLogo';
 import styles from './Navbar.module.css';
 
 const navLinks = [
@@ -36,7 +36,14 @@ export default function Navbar() {
       <div className={styles.inner}>
         {/* Logo */}
         <Link href="/" className={styles.brandLogo}>
-          <QuintaEscalaLogo size={24} showText />
+          <Image
+            src="/logo-qe.png"
+            alt="Quinta Escala"
+            width={36}
+            height={36}
+            className={styles.logoImg}
+          />
+          <span className={styles.brandName}>Quinta Escala</span>
         </Link>
 
         {/* Desktop nav */}

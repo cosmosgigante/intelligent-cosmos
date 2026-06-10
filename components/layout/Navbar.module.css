@@ -41,21 +41,18 @@
 .brandLogo:hover {
   opacity: 0.8;
 }
-.logoIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2));
-  border-radius: var(--radius-md);
-  color: #fff;
-  box-shadow: 0 0 15px var(--color-accent-glow);
+.logoImg {
+  filter: invert(1) sepia(1) saturate(2) hue-rotate(148deg) brightness(1.1);
+  mix-blend-mode: screen;
+  border-radius: 4px;
 }
-.logoText { 
-  color: var(--color-text); 
+.brandName {
+  color: var(--color-text);
+  font-family: var(--font-display);
   font-weight: 800;
-  letter-spacing: -0.04em;
+  font-size: var(--text-sm);
+  letter-spacing: -0.02em;
+  margin-left: var(--space-2);
 }
 
 /* Desktop nav */
