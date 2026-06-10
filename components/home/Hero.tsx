@@ -37,11 +37,11 @@ export default function Hero() {
           <div className={styles.logoWrap}>
             <div className={styles.logoGlow} />
             <Logo3D />
-            <div className={styles.logoMeta}>
-              <span className={styles.logoService}>🌐 Diseño y desarrollo web profesional</span>
-              <span className={styles.logoAvailable}>
+            <div className={styles.badge}>
+              <span>🌐 Diseño y desarrollo web profesional</span>
+              <span className={styles.available}>
                 <span className={styles.dot} />
-                Disponible para proyectos
+                disponible para proyectos
               </span>
             </div>
           </div>
