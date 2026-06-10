@@ -38,11 +38,13 @@ export const metadata: Metadata = {
 
 import MouseGlow from '@/components/ui/MouseGlow';
 import ScrollToTop from '@/components/utils/ScrollToTop';
+import Loader from '@/components/ui/Loader';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
       <body>
+        <Loader />
         <ScrollToTop />
         <MouseGlow />
         <Navbar />

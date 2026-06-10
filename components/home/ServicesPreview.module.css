@@ -51,9 +51,25 @@
 
 .card:hover {
   transform: translateY(-4px) scale(1.02);
-  border-color: rgba(79, 209, 197, 0.3);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
 }
+
+/* Per-card accent colors */
+.card1 { border-color: rgba(79, 209, 197, 0.15); }
+.card1:hover { border-color: rgba(79, 209, 197, 0.5); box-shadow: 0 20px 60px rgba(79,209,197,0.1); }
+.card1 .icon { color: #4fd1c5; border-color: rgba(79,209,197,0.25); }
+
+.card2 { border-color: rgba(124, 111, 255, 0.15); }
+.card2:hover { border-color: rgba(124, 111, 255, 0.5); box-shadow: 0 20px 60px rgba(124,111,255,0.1); }
+.card2 .icon { color: #7c6fff; border-color: rgba(124,111,255,0.25); }
+
+.card3 { border-color: rgba(251, 146, 60, 0.15); }
+.card3:hover { border-color: rgba(251, 146, 60, 0.5); box-shadow: 0 20px 60px rgba(251,146,60,0.1); }
+.card3 .icon { color: #fb923c; border-color: rgba(251,146,60,0.25); }
+
+.card4 { border-color: rgba(59, 130, 246, 0.15); }
+.card4:hover { border-color: rgba(59, 130, 246, 0.5); box-shadow: 0 20px 60px rgba(59,130,246,0.1); }
+.card4 .icon { color: #3b82f6; border-color: rgba(59,130,246,0.25); }
 
 .card1 { grid-column: span 2; }
 .card2 { grid-column: span 1; }
