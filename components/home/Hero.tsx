@@ -16,8 +16,7 @@ export default function Hero() {
         {/* ── LEFT COLUMN ── */}
         <div className={styles.left}>
           <div className={styles.badge}>
-            <Sparkles size={13} />
-            <span>Infraestructura digital de alto nivel</span>
+            <span>🌐 Diseño y desarrollo web profesional</span>
             <span className={styles.available}>
               <span className={styles.dot} />
               disponible para proyectos
@@ -31,7 +30,7 @@ export default function Hero() {
           </h1>
 
           <p className={styles.subheadline}>
-            Creamos páginas web y soluciones digitales preparadas para acompañar el crecimiento de tu negocio.
+            Construimos experiencias digitales rápidas, modernas y profesionales para que tu negocio proyecte la imagen que merece.
           </p>
 
           <div className={styles.actions}>
