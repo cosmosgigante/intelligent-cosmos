@@ -272,6 +272,7 @@
 /* ── Right column ─────────────────────────────────────────── */
 .right {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   animation: slideRight 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
@@ -305,9 +306,55 @@
   filter: blur(40px);
   animation: glowPulse 4s ease-in-out infinite;
   pointer-events: none;
+  top: 0;
 }
 
 @keyframes glowPulse {
   0%,100% { opacity: 0.7; transform: scale(1); }
   50%      { opacity: 1;   transform: scale(1.1); }
+}
+
+/* Text below logo */
+.logoMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.logoService {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.logoAvailable {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(34, 197, 94, 0.8);
+  letter-spacing: 0.03em;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 7px #22c55e;
+  display: inline-block;
+  animation: dotPulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes dotPulse {
+  0%,100% { box-shadow: 0 0 5px #22c55e; }
+  50%      { box-shadow: 0 0 12px #22c55e; }
 }

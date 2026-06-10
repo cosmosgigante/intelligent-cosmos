@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Logo3D from '@/components/ui/Logo3D';
 import styles from './Hero.module.css';
 
@@ -15,14 +15,6 @@ export default function Hero() {
 
         {/* ── LEFT COLUMN ── */}
         <div className={styles.left}>
-          <div className={styles.badge}>
-            <span>🌐 Diseño y desarrollo web profesional</span>
-            <span className={styles.available}>
-              <span className={styles.dot} />
-              disponible para proyectos
-            </span>
-          </div>
-
           <h1 className={styles.headline}>
             <span className={styles.glitch} data-text="Diseñamos.">Diseñamos.</span><br />
             <span className="gradient-text">Construimos.</span><br />
@@ -35,20 +27,23 @@ export default function Hero() {
 
           <div className={styles.actions}>
             <Link href="/contacto" className={`btn btn--primary btn--lg ${styles.ctaBtn}`}>
-              Iniciar proyecto <ArrowRight size={18} />
-            </Link>
-            <Link href="/portfolio" className="btn btn--secondary btn--lg">
-              Ver portfolio
+              Solicitar presupuesto <ArrowRight size={18} />
             </Link>
           </div>
-
         </div>
 
         {/* ── RIGHT COLUMN ── */}
-        <div className={styles.right} aria-hidden="true">
+        <div className={styles.right}>
           <div className={styles.logoWrap}>
             <div className={styles.logoGlow} />
             <Logo3D />
+            <div className={styles.logoMeta}>
+              <span className={styles.logoService}>🌐 Diseño y desarrollo web profesional</span>
+              <span className={styles.logoAvailable}>
+                <span className={styles.dot} />
+                Disponible para proyectos
+              </span>
+            </div>
           </div>
         </div>
 
