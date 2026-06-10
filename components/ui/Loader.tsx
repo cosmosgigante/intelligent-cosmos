@@ -8,15 +8,8 @@ export default function Loader() {
   const [phase, setPhase] = useState<'visible' | 'exploding' | 'done'>('visible');
 
   useEffect(() => {
-    const already = sessionStorage.getItem('qe-loaded');
-    if (already) { setPhase('done'); return; }
-
     const t1 = setTimeout(() => setPhase('exploding'), 2200);
-    const t2 = setTimeout(() => {
-      setPhase('done');
-      sessionStorage.setItem('qe-loaded', '1');
-    }, 2900);
-
+    const t2 = setTimeout(() => setPhase('done'), 2900);
     return () => { clearTimeout(t1); clearTimeout(t2); };
   }, []);
 
