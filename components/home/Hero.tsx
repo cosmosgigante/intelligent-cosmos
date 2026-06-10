@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import Logo3DWrapper from '@/components/ui/Logo3DWrapper';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -42,20 +43,9 @@ export default function Hero() {
           </Link>
         </div>
 
-        {/* Cinematic Visual Asset */}
+        {/* 3D Logo */}
         <div className={styles.visual} aria-hidden="true">
-          <div className={styles.glassCard}>
-            <div className={styles.cardHeader}>
-              <div className={styles.dots}><span /><span /><span /></div>
-              <div className={styles.tab}>quintaescala.app/v1</div>
-            </div>
-            <div className={styles.cardBody}>
-              <div className={`${styles.codeLine} ${styles.type1}`} style={{ width: '80%' }} />
-              <div className={`${styles.codeLine} ${styles.type2}`} style={{ width: '60%' }} />
-              <div className={`${styles.codeLine} ${styles.type3}`} style={{ width: '90%', background: 'white' }} />
-              <div className={`${styles.codeLine} ${styles.type4}`} style={{ width: '40%' }} />
-            </div>
-          </div>
+          <Logo3DWrapper />
         </div>
 
         <div className={styles.stats}>
