@@ -17,6 +17,10 @@ export default function Hero() {
         <div className={styles.badge}>
           <Sparkles size={14} />
           <span>Infraestructura digital de alto nivel</span>
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', marginLeft: '8px' }}>
+            <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#22c55e', display: 'inline-block', boxShadow: '0 0 6px #22c55e' }} />
+            disponible para proyectos
+          </span>
         </div>
 
         <h1 className={styles.headline}>
