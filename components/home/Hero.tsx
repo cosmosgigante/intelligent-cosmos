@@ -43,18 +43,6 @@ export default function Hero() {
             </Link>
           </div>
 
-          <div className={styles.stats}>
-            {[
-              { value: '50+',  label: 'Proyectos Pro' },
-              { value: '100%', label: 'Uptime garantizado' },
-              { value: '24h',  label: 'Respuesta técnica' },
-            ].map((stat) => (
-              <div key={stat.label} className={styles.stat}>
-                <span className={styles.statValue}>{stat.value}</span>
-                <span className={styles.statLabel}>{stat.label}</span>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* ── RIGHT COLUMN ── */}
