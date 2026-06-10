@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import Logo3DWrapper from '@/components/ui/Logo3DWrapper';
+import Logo3D from '@/components/ui/Logo3D';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -45,7 +45,7 @@ export default function Hero() {
 
         {/* 3D Logo */}
         <div className={styles.visual} aria-hidden="true">
-          <Logo3DWrapper />
+          <Logo3D />
         </div>
 
         <div className={styles.stats}>
