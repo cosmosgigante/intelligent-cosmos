@@ -25,14 +25,13 @@ export default function Hero() {
           </div>
 
           <h1 className={styles.headline}>
-            <span className={styles.glitch} data-text="Desarrollamos">Desarrollamos</span>
-            {' '}el software<br />
-            <span className="gradient-text">que escala tu mundo</span>
+            <span className={styles.glitch} data-text="Diseñamos.">Diseñamos.</span><br />
+            <span className="gradient-text">Construimos.</span><br />
+            Escalamos.
           </h1>
 
           <p className={styles.subheadline}>
-            Estrategia técnica y ejecución de alta precisión para
-            aplicaciones web, sistemas a medida y productos SaaS.
+            Creamos páginas web y soluciones digitales preparadas para acompañar el crecimiento de tu negocio.
           </p>
 
           <div className={styles.actions}>
