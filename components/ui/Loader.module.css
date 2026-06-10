@@ -126,15 +126,16 @@
 }
 
 .bar {
+  width: 100%;
   height: 100%;
   border-radius: 99px;
   background: linear-gradient(90deg, #4fd1c5, #7c6fff);
-  animation: loadBar 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: loadBar 2.2s cubic-bezier(0.25, 0, 0.15, 1) forwards;
 }
 
 @keyframes loadBar {
-  0%   { width: 0%; }
-  40%  { width: 55%; }
-  80%  { width: 85%; }
-  100% { width: 100%; }
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
 }
